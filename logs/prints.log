@@ -1,0 +1,7 @@
+14:32:16.912 [main] INFO  resources.Base - Driver is initialized
+14:33:10.011 [main] INFO  resources.Base - Driver is initialized
+14:33:25.230 [main] INFO  resources.Base - ==================== END OF SUITE ====================
+14:34:01.973 [main] INFO  resources.Base - Driver is initialized
+14:34:05.439 [main] INFO  resources.Base - Successfully navigated to landing page
+14:34:09.152 [main] INFO  resources.Base - Navigation to /campgrounds
+14:34:09.455 [main] INFO  resources.Base - ==================== END OF SUITE ====================
