@@ -21,6 +21,8 @@
                     <include name="userLogin" />
                     <include name="userPass" />
                     <include name="clickLoginButton" />
+                    <include name="checkRouteChange" />
+                    <include name="checkAlertDisplay" />
                 </methods>
             </class>
         </classes>

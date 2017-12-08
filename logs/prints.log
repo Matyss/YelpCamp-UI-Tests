@@ -1,6 +1,6 @@
-16:21:21.988 [main] INFO  resources.Base - Navigating to login page
-16:21:22.087 [main] INFO  resources.Base - Navbar and footer are present
-16:21:22.240 [main] INFO  resources.Base - Provided user login
-16:21:22.358 [main] INFO  resources.Base - Provided user password
-16:21:22.939 [main] INFO  resources.Base - Clicking on login button
-16:21:23.227 [main] INFO  resources.Base - ==================== END OF SUITE ====================
+17:01:26.565 [main] INFO  resources.Base - Navigating to login page
+17:01:26.646 [main] INFO  resources.Base - Navbar and footer are present
+17:01:26.752 [main] INFO  resources.Base - Provided user login
+17:01:26.877 [main] INFO  resources.Base - Provided user password
+17:01:27.553 [main] INFO  resources.Base - Clicking on login button
+17:01:28.004 [main] INFO  resources.Base - ==================== END OF SUITE ====================

@@ -54,4 +54,15 @@ public class LoginPageTest extends Base{
         logs.info("Clicking on login button");
     }
 
+    @Test(priority = 7)
+    public void checkRouteChange() {
+        Assert.assertEquals(driver.getCurrentUrl(), "https://morning-wildwood-15402.herokuapp.com/campgrounds");
+    }
+
+    @Test(priority = 8)
+    public void checkAlertDisplay() {
+        Assert.assertTrue(landingPageElements.alert.isDisplayed());
+        Assert.assertEquals(landingPageElements.getAlertText(), "Welcome!");
+    }
+
 }

@@ -26,6 +26,13 @@ public class LandingPage {
     @FindBy(how = How.CSS, using = "body > footer")
     public WebElement footer;
 
+    @FindBy(how = How.CSS, using = "body > div:nth-child(2) > div")
+    public WebElement alert;
+
+    public String getAlertText() {
+        return alert.getText();
+    }
+
     public String getLandingPageTitle() {
         return driver.getTitle();
     }
