@@ -12,6 +12,15 @@
                 <methods>
                     <include name="rootPageNavigation"/>
                     <include name="goToCampgrounds"/>
+                    <include name="clickLogin"/>
+                </methods>
+            </class>
+            <class name="yelp_camp_test.LoginPageTest">
+                <methods>
+                    <include name="checkNavigation" />
+                    <include name="userLogin" />
+                    <include name="userPass" />
+                    <include name="clickLoginButton" />
                 </methods>
             </class>
         </classes>

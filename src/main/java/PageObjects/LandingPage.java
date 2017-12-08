@@ -17,6 +17,15 @@ public class LandingPage {
     @FindBy(how = How.CSS, using = "body > ul")
     public  WebElement slideshowList;
 
+    @FindBy(how = How.CSS, using = "#navbar > ul.nav.navbar-nav.navbar-right > li:nth-child(1) > a")
+    public WebElement loginButton;
+
+    @FindBy(how = How.CSS, using = "body > nav")
+    public WebElement navbar;
+
+    @FindBy(how = How.CSS, using = "body > footer")
+    public WebElement footer;
+
     public String getLandingPageTitle() {
         return driver.getTitle();
     }

@@ -1,0 +1,7 @@
+16:19:44.120 [main] INFO  resources.Base - Navigating to login page
+16:19:44.210 [main] INFO  resources.Base - Navbar and footer are present
+16:19:44.338 [main] INFO  resources.Base - Provided user login
+16:19:44.652 [main] INFO  resources.Base - ==================== END OF SUITE ====================
+16:21:19.282 [main] INFO  resources.Base - Driver is initialized
+16:21:20.986 [main] INFO  resources.Base - Successfully navigated to landing page
+16:21:21.514 [main] INFO  resources.Base - Navigation to /campgrounds
