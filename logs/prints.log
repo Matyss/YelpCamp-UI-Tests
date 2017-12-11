@@ -1,6 +1,3 @@
-17:01:26.565 [main] INFO  resources.Base - Navigating to login page
-17:01:26.646 [main] INFO  resources.Base - Navbar and footer are present
-17:01:26.752 [main] INFO  resources.Base - Provided user login
-17:01:26.877 [main] INFO  resources.Base - Provided user password
-17:01:27.553 [main] INFO  resources.Base - Clicking on login button
-17:01:28.004 [main] INFO  resources.Base - ==================== END OF SUITE ====================
+16:12:08.247 [main] INFO  resources.Base - Navigating to /new
+16:12:10.217 [main] INFO  resources.Base - Added new test campground
+16:12:10.421 [main] INFO  resources.Base - ==================== END OF SUITE ====================

@@ -6,10 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import resources.Base;
 
 import java.io.IOException;
@@ -30,7 +27,7 @@ public class LandingPageTest extends Base {
         logs.info("Driver is initialized");
     }
 
-    @Test(priority = 0)
+    @Test
     public void rootPageNavigation() {
         driver.get(rootURL);
 
@@ -40,14 +37,14 @@ public class LandingPageTest extends Base {
         logs.info("Successfully navigated to landing page");
     }
 
-    @Test(priority = 1)
+    @Test
     public void goToCampgrounds() {
         Assert.assertTrue(landingPageElements.viewCampgroundsButton.isDisplayed());
         landingPageElements.viewCampgroundsButton.click();
         logs.info("Navigation to /campgrounds");
     }
 
-    @Test(priority = 2)
+    @Test
     public void clickLogin() {
         Assert.assertTrue(landingPageElements.loginButton.isDisplayed());
         landingPageElements.loginButton.click();

@@ -6,7 +6,7 @@
         <!--<listener class-name="resources.Listeners" />-->
         <!--<listener class-name="resources.ExtentReporterNG" />-->
     <!--</listeners>-->
-    <test verbose="2" preserve-order="true" name="Login user">
+    <test verbose="2" preserve-order="true" name="mainFuncTest">
         <classes>
             <class name="yelp_camp_test.LandingPageTest">
                 <methods>
@@ -23,6 +23,12 @@
                     <include name="clickLoginButton" />
                     <include name="checkRouteChange" />
                     <include name="checkAlertDisplay" />
+                </methods>
+            </class>
+            <class name="yelp_camp_test.NewCampgroundTest">
+                <methods>
+                    <include name="addNewCampground" />
+                    <include name="completeForm" />
                 </methods>
             </class>
         </classes>

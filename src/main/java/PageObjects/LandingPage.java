@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import java.sql.Array;
+
 public class LandingPage {
 
     //Driver declaration
@@ -28,6 +30,14 @@ public class LandingPage {
 
     @FindBy(how = How.CSS, using = "body > div:nth-child(2) > div")
     public WebElement alert;
+
+    @FindBy(how = How.CSS, using = "body > div:nth-child(3) > header > p:nth-child(3) > a")
+    public WebElement addCampgroundButton;
+
+    public int getCampgrounds() {
+        int numOfCamps;
+        return numOfCamps = driver.findElements(By.className("thumbnail")).size();
+    }
 
     public String getAlertText() {
         return alert.getText();
