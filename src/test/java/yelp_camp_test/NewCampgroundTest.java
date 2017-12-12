@@ -46,6 +46,13 @@ public class NewCampgroundTest extends Base{
         logs.info("Added new test campground");
     }
 
+    //Check if this dataProvider even works with name argument
+    @Test(dataProvider = "newCampData")
+    public void checkNewCamp(String name, Integer price, String loc, String url, String desc) {
+        System.out.println(name);
+        Assert.assertTrue(landingPageElements.getCampground(name));
+    }
+
     @DataProvider
     public Object[][] newCampData() {
 

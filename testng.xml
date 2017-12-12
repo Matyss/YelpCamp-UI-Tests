@@ -29,6 +29,7 @@
                 <methods>
                     <include name="addNewCampground" />
                     <include name="completeForm" />
+                    <include name="checkNewCamp" />
                 </methods>
             </class>
         </classes>

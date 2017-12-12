@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-import java.sql.Array;
+import java.util.List;
 
 public class LandingPage {
 
@@ -34,9 +34,13 @@ public class LandingPage {
     @FindBy(how = How.CSS, using = "body > div:nth-child(3) > header > p:nth-child(3) > a")
     public WebElement addCampgroundButton;
 
-    public int getCampgrounds() {
-        int numOfCamps;
-        return numOfCamps = driver.findElements(By.className("thumbnail")).size();
+    public boolean getCampground(String campName) {
+        List<WebElement> camps = (List) driver.findElements(By.className("caption"));
+
+        for(WebElement camp : camps) {
+            if(camp.getText().contains(campName)) return true;
+        }
+        return false;
     }
 
     public String getAlertText() {

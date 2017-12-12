@@ -2,6 +2,7 @@ package yelp_camp_test;
 
 import PageObjects.LandingPage;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import resources.Base;
@@ -26,6 +27,6 @@ public class SandboxTesting extends Base {
 
     @Test
     public void someTest() {
-        System.out.println(landingPageElements.getCampgrounds());
+        Assert.assertTrue(landingPageElements.getCampground("New Test"));
     }
 }
