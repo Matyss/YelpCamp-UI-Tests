@@ -1,6 +1,2 @@
-16:40:32.248 [main] INFO  resources.Base - Provided user password
-16:40:33.642 [main] INFO  resources.Base - Clicking on login button
-16:40:33.656 [main] INFO  resources.Base - Correctly redirected to main page
-16:40:33.733 [main] INFO  resources.Base - Login alert on main page is displayed
-16:40:34.160 [main] INFO  resources.Base - Navigating to /new
-16:40:36.451 [main] INFO  resources.Base - Added new test campground
+17:55:18.403 [main] INFO  resources.Base - Navigating to test camp details page
+17:55:54.301 [main] INFO  resources.Base - Navigating to test camp details page

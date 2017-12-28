@@ -27,6 +27,6 @@ public class SandboxTesting extends Base {
 
     @Test
     public void someTest() {
-        Assert.assertTrue(landingPageElements.getCampground("New Test"));
+        Assert.assertTrue(landingPageElements.isCampDisplayed("New Test"));
     }
 }

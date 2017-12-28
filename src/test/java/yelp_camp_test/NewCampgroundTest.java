@@ -43,16 +43,17 @@ public class NewCampgroundTest extends Base{
         newCampgroundPageElements.campDescriptionInput.sendKeys(desc);
 
         newCampgroundPageElements.submitCampButton.click();
-        logs.info("Added new test campground");
+        logs.info("Adding new test campground");
     }
 
-    //Check if this dataProvider even works with name argument
     @Test(dataProvider = "newCampData")
     public void checkNewCamp(String name, Integer price, String loc, String url, String desc) {
         System.out.println(name);
-        Assert.assertTrue(landingPageElements.getCampground(name));
+        Assert.assertTrue(landingPageElements.isCampDisplayed(name));
+        logs.info("Checking if campground is displayed");
     }
 
+    //Data provider for information required in the new camp form
     @DataProvider
     public Object[][] newCampData() {
 

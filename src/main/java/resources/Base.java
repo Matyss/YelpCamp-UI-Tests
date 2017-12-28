@@ -78,7 +78,7 @@ public class Base {
         return driver;
     }
 
-    public void takeScreenshot(String resultMethod, long endMillis) throws IOException {
+    public void takeScreenshots(String resultMethod, long endMillis) throws IOException {
         File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileHandler.copy(source, new File("C://Users//m_szymajda//IdeaProjects//YelpCamp//"+resultMethod+"_"+endMillis+"_failScreen.png"));
     }

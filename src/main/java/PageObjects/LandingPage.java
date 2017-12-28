@@ -13,6 +13,7 @@ public class LandingPage {
     //Driver declaration
     public WebDriver driver;
 
+    //Page elements
     @FindBy(how = How.CSS, using = "#landing-header > a")
     public WebElement viewCampgroundsButton;
 
@@ -34,7 +35,19 @@ public class LandingPage {
     @FindBy(how = How.CSS, using = "body > div:nth-child(3) > header > p:nth-child(3) > a")
     public WebElement addCampgroundButton;
 
-    public boolean getCampground(String campName) {
+    public WebElement campMoreInfo(String campName) {
+        List<WebElement> camps = (List) driver.findElements(By.className("caption"));
+        WebElement parentDiv = null;
+        for(WebElement camp : camps) {
+            if(camp.getText().contains(campName)) {
+                parentDiv = camp.findElement(By.xpath("ancestor::node()[1]"));
+            }
+        }
+        WebElement parentDivButton = parentDiv.findElement(By.tagName("a"));
+        return parentDivButton;
+    }
+
+    public boolean isCampDisplayed(String campName) {
         List<WebElement> camps = (List) driver.findElements(By.className("caption"));
 
         for(WebElement camp : camps) {

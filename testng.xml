@@ -6,9 +6,12 @@
         <!--<listener class-name="resources.Listeners" />-->
         <!--<listener class-name="resources.ExtentReporterNG" />-->
     <!--</listeners>-->
+    <listeners>
+        <listener class-name="resources.Listeners" />
+    </listeners>
     <test verbose="2" preserve-order="true" name="mainFuncTest">
         <classes>
-            <class name="yelp_camp_test.LandingPageTest">
+            <!--<class name="yelp_camp_test.LandingPageTest">
                 <methods>
                     <include name="rootPageNavigation"/>
                     <include name="goToCampgrounds"/>
@@ -30,6 +33,12 @@
                     <include name="addNewCampground" />
                     <include name="completeForm" />
                     <include name="checkNewCamp" />
+                </methods>
+            </class>-->
+            <class name="yelp_camp_test.DeleteCampground">
+                <methods>
+                    <include name="goToDetails" />
+                    <include name="checkCampInfo" />
                 </methods>
             </class>
         </classes>
